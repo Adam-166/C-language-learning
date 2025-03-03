@@ -318,3 +318,77 @@ int main() {
 
     return 0;
 }
+//#include<iostream>
+//
+//using namespace std;
+//int main() {
+//
+//	/*cout << "Hello C++" << endl;*/
+//	int a = 10;
+//	cout << "a=" << a << endl;
+//	system("pause");
+//
+//	return 0;
+//}
+//变量
+//#include<iostream>
+//using namespace std;
+//#define Day 7//宏常量
+//int main() {
+//
+//	cout << "一周有" << Day  <<"天" << endl;
+//	const int num = 365;//修饰变量
+//	/*int num = 100;*/
+//	cout << "一年有" << num << "天" << endl;
+//
+//	return 0;
+//}
+//整形
+//#include <iostream>
+//using namespace std;
+//int main() {
+//	//短整形（-32768~~32767）
+//	short num1 = 32768;//超出存储空间从最后一位开始
+//	cout << "num1=" << num1 << endl;
+//	//整形
+//	int num2 = 32768;
+//	cout << "num2=" << num2 << endl;
+//	//长整型
+//	long num3 = 666666;
+//	//长长整形
+//	long long num4 = 9999999;
+//	
+//	cout << "num3=" << num3 << endl;
+//	cout << "num4=" << num4 << endl;
+//	return 0;
+//}
+//sizeof求出数据类型占用内存空间大小
+//#include <iostream>
+//using namespace std;
+//int main() {
+//	//short(2)  int(4)  long(4)   long long(8)
+//	short num1 = 10;
+//	cout << "short占用内存空间大小为：" << sizeof(short) << endl;
+//	cout << "short占用内存空间大小为：" << sizeof(num1) << endl;
+//	int num2 = 10;
+//	cout << "int占用内存空间大小为：" << sizeof(num2) << endl;
+//	system("pause");// 暂停程序，等待用户按键
+//	return 0;
+//}
+#include <iostream>
+using namespace std;
+int main() {
+	float num1 = 3.1415926f;//默认情况保留6位有效数字
+	double num2 = 3.1415926;
+	cout << num1 << endl;
+	cout << num2 << endl;
+	//数据类型占用内存空间大小
+	cout << "float占用内存空间大小为：" << sizeof(float) << endl;//4
+	cout << "double占用内存空间大小为：" << sizeof(double) << endl;//8
+	//科学计数法
+	float f1 = 3e2f;//3*10^2
+	cout << "f1=" << f1 << endl;
+	double d1 = 3e-2;//3*0.1^2
+	cout << "d1=" << d1 << endl;
+	return 0;
+}
