@@ -569,3 +569,39 @@ int main() {
 	cout << "胜利！！！";
 	return 0;
 }
+#include <iostream>
+using namespace std;
+int main() {
+	//水仙花数
+	//a*a*a+b*b*b+c*c*c=a*100+b*10+c
+	/*int a, b, c = 0;
+	int num = 100;
+	do {
+		
+		a = num / 100;
+		b = num % 100 / 10;
+		c = num % 10;
+		if (num == a * a * a + b * b * b + c * c * c) {
+			cout << num << endl;
+		}
+		num++;
+	} while (num < 1000);*/
+	/*for (int num = 1; num <= 100; num++) {
+		int a = num / 10;
+		int b = num % 10;
+		int c = num % 10;
+		if (a == 7) {
+			cout << "敲桌子" << endl;
+		}
+		else if (b == 7) {
+			cout << "敲桌子" << endl;
+		}
+		else if (c == 0) {
+			cout << "敲桌子" << endl;
+		}
+		else {
+			cout << num << endl;
+		}
+	}*/
+		return 0;
+}
