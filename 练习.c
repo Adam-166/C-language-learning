@@ -392,3 +392,180 @@ int main() {
 	cout << "d1=" << d1 << endl;
 	return 0;
 }
+//#include <iostream>
+//using namespace std;
+//int main() {
+//	//字符型变量用于显示单个字符
+//	char num1= 'a';
+//	char num2 = 'A';
+//	cout << num1 << endl;
+//	cout << "num1=" << sizeof(num1) << endl;//占用1个字节；
+//	cout << (int)num1 << endl;//97
+//	cout << (int)num2 << endl;//65
+//	system("pause");
+//	return 0;
+//}
+//转义字符
+//#include <iostream>
+//using namespace std;
+//int main() {
+//	
+//	cout<< "aa\thello" << endl;//8字符
+//	cout<< "aaaaa\thello" << endl;
+//	cout<< "aaaaaaaaa\thello" << endl;
+//	/*cout << "aaaaaaaaa\thello"
+//
+//		"aaaaaaaaa" 占 9 个字符。
+//
+//		制表符会填充 7 个空格（总长度到 16，因为 9 超过了第一个制表位 8），使 hello 从第 16 列开始。
+//
+//		输出：aaaaaaaaa.......hello*/
+//	cout << "hello\nC++" << endl;//\n换行
+//	
+//	return 0;
+//}
+//字符串型
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//int main() {
+//	//法1  C风格字符串
+//	char str1[] = "hello world";
+//	cout << str1 << endl;
+//	//法2
+//	string str = "hello world";
+//	cout << str << endl;
+//	//注意：C++风格字符串，需要加入头文件==#include\<string>==
+//	return 0;
+//}
+//2.7 布尔类型 bool
+//
+//** 作用： * *布尔数据类型代表真或假的值
+//
+//bool类型只有两个值：
+//
+//* true  -- - 真（本质是1）
+//* false -- - 假（本质是0）
+//
+//* *bool类型占 == 1个字节 == 大小 * *
+//#include <iostream>
+//using namespace std;
+//int main() {
+//	bool sum = true;
+//	cout << sum << endl;//1
+//	sum = false;
+//	cout << sum << endl;//0
+//	cout << "sum=" << sizeof(sum) << endl;//1
+//	return 0;
+//}
+//2.8 数据的输入
+//
+//* *作用：用于从键盘获取数据 * *
+//
+//**关键字： * *cin
+//
+//* *语法： * *`cin >> 变量 `
+//
+//示例：
+//#include <iostream>
+//using namespace std;
+//int main() {
+//	//整型输入
+//	int a = 0;
+//	cout << "请输入整数变量：" << endl;
+//	cin >> a;
+//	cout << "输出：" << a << endl;
+//
+//	//浮点型输入
+//	double d = 0;
+//	cout << "请输入浮点型变量：" << endl;
+//	cin >> d;
+//	cout << d << endl;
+//
+//	//字符型输入
+//	char ch = 0;
+//	cout << "请输入字符型变量：" << endl;
+//	cin >> ch;
+//	cout << ch << endl;
+//
+//	//字符串型输入
+//	string str;
+//	cout << "请输入字符串型变量：" << endl;
+//	cin >> str;
+//	cout << str << endl;
+//
+//	//布尔类型输入
+//	bool flag = true;
+//	cout << "请输入布尔型变量：" << endl;
+//	cin >> flag;
+//	cout << flag << endl;
+//	return 0;
+//}
+//#include <iostream>
+//using namespace std;
+//
+//int main() {
+//    int score;
+//    cout << "请输入电影评分（1-10）：";
+//    cin >> score;
+//
+//    switch (score) {
+//    case 1:
+//    case 2:
+//    case 3:
+//    case 4:
+//    case 5:
+//        cout << "烂片" << endl;
+//        break;
+//    case 6:
+//    case 7:
+//    case 8:
+//    case 9:
+//        cout << "正常" << endl;
+//        break;
+//    case 10:
+//        cout << "强烈推荐" << endl;
+//        break;
+//    default:
+//        cout << "无效的评分！请输入1-10之间的整数。" << endl;
+//    }
+//
+//    return 0;
+//}
+//#include <iostream>
+//using namespace std;
+//int main() {
+//	int num = 0;
+//	cout << "你喜欢我吗";
+//	cin >> num;
+//	switch (num) {
+//	case 1:
+//		cout << "yes" << endl;
+//		break;
+//	case 2:
+//		cout << "no" << endl;
+//	}
+//
+//
+//	return 0;
+//}
+#include <iostream>
+using namespace std;
+int main() {
+	int num = 0;
+	int sum = 76;
+	cout << "请输入一个数字：";
+	cin >> num;
+	while (num!=sum) {
+		if (num > sum) {
+			cout << "大了" << endl;
+		}
+		else {
+			cout << "小了" << endl;
+		}
+		cout << "请再输入：";
+		cin >> num;
+	}
+	cout << "胜利！！！";
+	return 0;
+}
